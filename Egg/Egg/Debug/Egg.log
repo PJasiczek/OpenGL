@@ -1,0 +1,3 @@
+﻿  Egg.cpp
+c:\users\piotr jasiczek\documents\visual studio 2017\projects\egg\egg\egg.cpp(263): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
+  Egg.vcxproj -> C:\Users\Piotr Jasiczek\Documents\Visual Studio 2017\Projects\Egg\Debug\Egg.exe
