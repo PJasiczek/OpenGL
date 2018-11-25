@@ -1,0 +1,3 @@
+﻿  BezierCurve.cpp
+c:\users\piotr jasiczek\documents\visual studio 2017\projects\beziercurve\beziercurve\beziercurve.cpp(260): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
+  BezierCurve.vcxproj -> C:\Users\Piotr Jasiczek\Documents\Visual Studio 2017\Projects\BezierCurve\Debug\BezierCurve.exe
