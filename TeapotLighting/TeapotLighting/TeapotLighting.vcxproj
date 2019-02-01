@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{52978B1C-5C13-4429-ABBE-F40197F7FFB6}</ProjectGuid>
+    <ProjectGuid>{CAA1325E-5514-4233-AFB8-2FAD5CF1EDD1}</ProjectGuid>
     <RootNamespace>TeapotLighting</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

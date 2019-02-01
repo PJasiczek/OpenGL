@@ -13,15 +13,15 @@ using namespace std;
 typedef float point3[3];
 static GLfloat viewer[] = { 0.0, 0.0, 10.0 };
 
-static GLfloat theta_y = 0.0;   
+static GLfloat theta_y = 0.0;  
 static GLfloat theta_x = 0.0;
 static GLfloat pix2angle;
 static GLfloat pix2angle1;		
 
-static GLint statusl = 0;       
+static GLint statusl = 0;     
 static GLint statusr = 0;
 
-static int x_pos_old = 0;      
+static int x_pos_old = 0;       
 static int y_pos_old = 0;
 
 static int delta_x = 0;
@@ -48,19 +48,19 @@ void Axes(void)
 	point3  z_max = { 0.0, 0.0,  5.0 };
 
 	glColor3f(1.0f, 0.0f, 0.0f);  
-	glBegin(GL_LINES);
+	glBegin(GL_LINES); 
 	glVertex3fv(x_min);
 	glVertex3fv(x_max);
 	glEnd();
 
-	glColor3f(0.0f, 1.0f, 0.0f); 
+	glColor3f(0.0f, 1.0f, 0.0f);  
 	glBegin(GL_LINES);  
 
 	glVertex3fv(y_min);
 	glVertex3fv(y_max);
 	glEnd();
 
-	glColor3f(0.0f, 0.0f, 1.0f); 
+	glColor3f(0.0f, 0.0f, 1.0f);  
 	glBegin(GL_LINES);
 
 	glVertex3fv(z_min);
@@ -81,7 +81,7 @@ void RenderScene(void)
 	{
 		if (delta_y) thetay += delta_y * pix2angle1*(M_PI / 180);
 	}
-	if (statusl == 1)							
+	if (statusl == 1)						
 	{
 		if (delta_x) thetax += delta_x * pix2angle*(M_PI / 180);
 	}										
@@ -89,19 +89,18 @@ void RenderScene(void)
 		if (delta_y > 0) R++;
 		if (delta_y < 0) R--;
 		if (R < 5) R = 5;
-		if (R > 18) R = 18;
+		if (R > 18) R= 18;
 	}
 
 	x = R * cos(thetax)*cos(thetay);
 	z = R * sin(thetax)*cos(thetay);
 	y = R * sin(thetay);
 	gluLookAt(x, y, z, 0.0, 0.0, 0.0, 0.0, cos(thetay), 0.0);
+
 	glColor3f(1.0f, 1.0f, 1.0f);
 
 	glutSolidTeapot(3.0);
-
 	glFlush();
-
 	glutSwapBuffers();
 
 }
@@ -148,7 +147,7 @@ void MyInit(void)
 	glLightf(GL_LIGHT0, GL_QUADRATIC_ATTENUATION, att_quadratic);
 
 	glShadeModel(GL_SMOOTH); 
-	glEnable(GL_LIGHTING);   
+	glEnable(GL_LIGHTING); 
 	glEnable(GL_LIGHT0);    
 	glEnable(GL_DEPTH_TEST); 
 
@@ -159,14 +158,14 @@ void Mouse(int btn, int state, int x, int y)
 	if (btn == GLUT_RIGHT_BUTTON && state == GLUT_DOWN)
 	{
 		x_pos_old = x;
-		y_pos_old = y;			 
-		statusr = 1;            
+		y_pos_old = y;			  
+		statusr = 1;             
 	}
 	else
 		if (btn == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
 		{
-			x_pos_old = x;       
-			y_pos_old = y;		 
+			x_pos_old = x;      
+			y_pos_old = y;		
 			statusl = 1;       
 		}
 		else
@@ -176,13 +175,13 @@ void Mouse(int btn, int state, int x, int y)
 void Motion(GLsizei x, GLsizei y)
 {
 
-	delta_x = x - x_pos_old;   
+	delta_x = x - x_pos_old;    
 	delta_y = y - y_pos_old;
 
 	x_pos_old = x;           
 	y_pos_old = y;
 
-	glutPostRedisplay();     
+	glutPostRedisplay();    
 }
 
 void ChangeSize(GLsizei horizontal, GLsizei vertical)
@@ -192,7 +191,6 @@ void ChangeSize(GLsizei horizontal, GLsizei vertical)
 	glMatrixMode(GL_PROJECTION);
 
 	glLoadIdentity();
-
 	gluPerspective(70, 1.0, 1.0, 30.0);
 
 	if (horizontal <= vertical)
@@ -202,7 +200,6 @@ void ChangeSize(GLsizei horizontal, GLsizei vertical)
 		glViewport((horizontal - vertical) / 2, 0, vertical, vertical);
 
 	glMatrixMode(GL_MODELVIEW);
-
 	glLoadIdentity();
 
 }
@@ -216,7 +213,7 @@ void main(void)
 
 	glutCreateWindow("Rzutowanie perspektywiczne");
 	glutDisplayFunc(RenderScene);
-	glutReshapeFunc(ChangeSize);                    
+	glutReshapeFunc(ChangeSize);                   
 	glutMouseFunc(Mouse);
 	glutMotionFunc(Motion);
 	MyInit();

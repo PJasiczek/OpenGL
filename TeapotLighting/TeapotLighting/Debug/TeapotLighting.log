@@ -1,3 +1,3 @@
 ﻿  TeapotLighting.cpp
-c:\users\piotr jasiczek\source\repos\teapotlighting\teapotlighting\teapotlighting.cpp(206): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
+c:\users\piotr jasiczek\source\repos\teapotlighting\teapotlighting\teapotlighting.cpp(208): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
   TeapotLighting.vcxproj -> C:\Users\Piotr Jasiczek\source\repos\TeapotLighting\Debug\TeapotLighting.exe
