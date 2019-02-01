@@ -2,9 +2,9 @@
 > This repository contains programs forming wire shapes by using Open Graphics Library
 
 ## Table of contents
+* [Technologies](#technologies)
+* [Setup](#setup)
 * Bezier curve
-    * [Technologies](#technologies)
-    * [Setup](#setup)
     * [General info](#general-info)
     * [Screenshots](#screenshots)
     * [Status](#status)
@@ -12,24 +12,31 @@
     * [General info](#general-info-1)
     * [Screenshots](#screenshots-1)
     * [Status](#status-1)
+* Egg casting
     * [General info](#general-info-2)
     * [Screenshots](#screenshots-2)
     * [Status](#status-2)
+* Egg lighting
     * [General info](#general-info-3)
     * [Screenshots](#screenshots-3)
     * [Status](#status-3)
+* Egg texturing    
     * [General info](#general-info-4)
     * [Screenshots](#screenshots-4)
     * [Status](#status-4)
+* Pyramid texturing    
     * [General info](#general-info-5)
     * [Screenshots](#screenshots-5)
     * [Status](#status-5)
+* Sierpinski carpet    
     * [General info](#general-info-6)
     * [Screenshots](#screenshots-6)
     * [Status](#status-6)
+* Teapot casting    
     * [General info](#general-info-7)
     * [Screenshots](#screenshots-7)
     * [Status](#status-7)
+* Teapot lighting
     * [General info](#general-info-8)
     * [Screenshots](#screenshots-8)
     * [Status](#status-8)
@@ -50,16 +57,17 @@
 ## Status
 Project is: _finished_.
 
+# Egg shape
 ## General info
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot1.png)
+![Example screenshot](./img/screenshot.png)
 
 ## Status
 Project is: _finished_.
 
-# Egg shape
+# Egg casting
 ## General info
 
 
@@ -69,6 +77,7 @@ Project is: _finished_.
 ## Status
 Project is: _finished_.
 
+# Egg lighting
 ## General info
 
 
@@ -78,6 +87,7 @@ Project is: _finished_.
 ## Status
 Project is: _finished_.
 
+# Egg texturing
 ## General info
 
 
@@ -87,6 +97,7 @@ Project is: _finished_.
 ## Status
 Project is: _finished_.
 
+# Pyramid texturing
 ## General info
 
 
@@ -96,6 +107,7 @@ Project is: _finished_.
 ## Status
 Project is: _finished_.
 
+# Sierpinski carpet
 ## General info
 
 
@@ -105,6 +117,7 @@ Project is: _finished_.
 ## Status
 Project is: _finished_.
 
+# Teapot casting  
 ## General info
 
 
@@ -114,6 +127,7 @@ Project is: _finished_.
 ## Status
 Project is: _finished_.
 
+# Teapot lighting 
 ## General info
 
 
