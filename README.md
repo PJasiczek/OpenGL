@@ -1,5 +1,5 @@
 # OpenGL
-> This repository contains programs forming wire shapes by using Open Graphics Library
+> This repository contains programs forming wire, solid shapes by using Open Graphics Library.
 
 ## Table of contents
 * [Technologies](#technologies)
@@ -46,6 +46,11 @@
 * C++ along with the use OpenGL graphic library with the GL Utility Toolkit extension (GLUT).
 
 ## Setup
+Programs placed in the repository will require the GLUT (OpenGL Utility Toolkit) library. However, if you do not have one in your development environment, install the library as follows:
+* Download and unpack library files <b>![glut-3.7](./library/glut_3_7.zip)</b>
+* Locate the folder in which the gl.h file is located and place the glut.h file there
+* Locate the folder in which the opengl32.lib file is located and place the glut32.lib file there
+* Locate the folder in which the opengl32.dll file is located and place the glut32.dll file there
 
 # Bezier Curve
 ## General info
@@ -53,6 +58,7 @@
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/screenshot1.png)
 
 ## Status
 Project is: _finished_.
@@ -62,7 +68,7 @@ Project is: _finished_.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/screenshot2.png)
 
 ## Status
 Project is: _finished_.
@@ -72,7 +78,7 @@ Project is: _finished_.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot2.png)
+![Example screenshot](./img/screenshot3.png)
 
 ## Status
 Project is: _finished_.
@@ -82,7 +88,7 @@ Project is: _finished_.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot3.png)
+![Example screenshot](./img/screenshot4.png)
 
 ## Status
 Project is: _finished_.
@@ -92,7 +98,7 @@ Project is: _finished_.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot4.png)
+![Example screenshot](./img/screenshot5.png)
 
 ## Status
 Project is: _finished_.
@@ -102,7 +108,7 @@ Project is: _finished_.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot5.png)
+![Example screenshot](./img/screenshot6.png)
 
 ## Status
 Project is: _finished_.
@@ -112,7 +118,7 @@ Project is: _finished_.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/screenshot7.png)
 
 ## Status
 Project is: _finished_.
@@ -122,7 +128,7 @@ Project is: _finished_.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/screenshot8.png)
 
 ## Status
 Project is: _finished_.
@@ -132,7 +138,7 @@ Project is: _finished_.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/screenshot9.png)
 
 ## Status
 Project is: _finished_.
