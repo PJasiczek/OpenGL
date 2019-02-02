@@ -4,11 +4,11 @@
 ## Table of contents
 * [Technologies](#technologies)
 * [Setup](#setup)
-* Bezier curve
+* [Bezier curve](#Bezier curve)
     * [General info](#general-info)
     * [Screenshots](#screenshots)
     * [Status](#status)
-* Egg shape
+* [Egg shape](#Egg shape)
     * [General info](#general-info-1)
     * [Screenshots](#screenshots-1)
     * [Status](#status-1)
@@ -70,9 +70,9 @@ Project is: _finished_.
 # Egg shape
 ## General info
 Program create spinning shape of the egg with three different models.
-* key _P_ switch to egg model built from _N_ points
-* key _W_ switch to egg model in the form of a grid formed from a combination of _N_ points
-* key _W_ switch to egg model built from randomly filled triangles
+* Key _P_ switch to egg model built from _N_ points
+* Key _W_ switch to egg model in the form of a grid formed from a combination of _N_ points
+* Key _W_ switch to egg model built from randomly filled triangles
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_3_dz/).
 
 ## Screenshots
@@ -97,7 +97,7 @@ Project is: _finished_.
 
 # Egg lighting
 ## General info
-Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
+Program create a spinnging shape of the egg illuminated with yellow light. Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot4.png)
@@ -107,6 +107,10 @@ Project is: _finished_.
 
 # Egg texturing
 ## General info
+Program create a textured shape of the egg with mouse listener function to rotate an object. 
+* With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
+* With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
+* When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_6_dz/).
 
 ## Screenshots
@@ -117,6 +121,10 @@ Project is: _finished_.
 
 # Egg two sources lighting
 ## General info
+Program create a shape of the egg illuminated with two different lighths sources. The same as in previous programs, it is possible to change the position of the object observer through mouse listener function to rotate an object.
+* With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
+* With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
+* When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
 
 ## Screenshots
@@ -127,6 +135,18 @@ Project is: _finished_.
 
 # Pyramid texturing
 ## General info
+Program create a textured pyramid with mouse listener function to rotate an object.
+* With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
+* With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
+* When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+Each wall was assigned a key with the help of which we turn off and turn on surface texturing.
+* Key _P_ enable/disable texturing of one of the walls of the pyramid
+* Key _O_ enable/disable texturing of one of the walls of the pyramid
+* Key _I_ enable/disable texturing of one of the walls of the pyramid
+* Key _U_ enable/disable texturing of one of the walls of the pyramid
+* Key _Y_ switches texture of the pyramid surface to texturing one or two sides
+* Key _T_ enable/disable texturing the surface of the pyramid
+
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_6_dz/).
 
 ## Screenshots
@@ -137,7 +157,7 @@ Project is: _finished_.
 
 # Sierpinski carpet
 ## General info
-Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_2_dz/).
+Program create the Sierpinski carpet object. Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_2_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot7.png)
@@ -161,6 +181,10 @@ Project is: _finished_.
 
 # Teapot lighting 
 ## General info
+Program create a solid teapot illuminated with white light. The same as in previous programs, it is possible to change the position of the object observer through mouse listener function to rotate an object.
+* With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
+* With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
+* When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
 
 ## Screenshots
