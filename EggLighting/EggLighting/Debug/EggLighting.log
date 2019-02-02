@@ -1,4 +1,3 @@
 ﻿  EggLighting.cpp
-c:\users\piotr jasiczek\source\repos\egglighting\egglighting\egglighting.cpp(389): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
-c:\users\piotr jasiczek\source\repos\egglighting\egglighting\egglighting.cpp(395): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\u009C" nie może być przedstawiony w bieżącej stronie kodowej (1250)
-  EggLighting.vcxproj -> C:\Users\Piotr Jasiczek\source\repos\EggLighting\Debug\EggLighting.exe
+c:\users\piotr jasiczek\documents\github\opengl\egglighting\egglighting\egglighting.cpp(331): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
+  EggLighting.vcxproj -> C:\Users\Piotr Jasiczek\Documents\GitHub\OpenGL\EggLighting\Debug\EggLighting.exe

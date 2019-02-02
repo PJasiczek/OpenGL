@@ -16,7 +16,6 @@ using namespace std;
 typedef float point3[3];
 point3	normal_vec;
 static GLfloat theta[] = { 0.0, 0.0, 0.0 }; 
-int model = 1;  
 static GLfloat viewer[] = { 0.0, 0.0, 15.0 };
 
 struct Point
@@ -82,7 +81,7 @@ void Egg()
 {
 	Point PointsEgg[N + 1][N + 1];
 	GLfloat	length;
-	float	xu, xv, yu, yv, zu, zv;
+	float xu, xv, yu, yv, zu, zv;
 
 	for (int i = 0; i < N + 1; i++)
 	{
@@ -94,68 +93,60 @@ void Egg()
 		}
 	}
 
-	switch (model)
-	{
+	for (int i = 0; i < N; i++) {
+		for (int k = 0; k < N; k++) {
 
-	case 1:
-	{
-		for (int i = 0; i < N + 1; i++)
-		{
-			for (int k = 0; k < N + 1; k++)
-			{
-				glBegin(GL_POINTS);
-				glColor3ub(0, 140, 0);
-				glVertex3f(PointsEgg[i][k].x, PointsEgg[i][k].y, PointsEgg[i][k].z);
-				glEnd();
-			}
-		}
-	}
-	break;
-	case 2:
-	{
-		for (int i = 0; i < N + 1; i++)
-		{
-			for (int k = 1; k < N + 1; k++)
-			{
-				glBegin(GL_LINES);
-				glColor3ub(0, 140, 0);
-				glVertex3f(PointsEgg[i][k - 1].x, PointsEgg[i][k - 1].y, PointsEgg[i][k - 1].z);
-				glVertex3f(PointsEgg[i][k].x, PointsEgg[i][k].y, PointsEgg[i][k].z);
-				glEnd();
-			}
-		}
+			float u = (float)i / N;
+			float v = (float)k / N;
+			xu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * cos(M_PI * v);
+			xv = M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * sin(M_PI * v);
+			yu = 640 * pow(u, 3) - 960 * pow(u, 2) + 320 * u;
+			yv = 0;
+			zu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * sin(M_PI * v);
+			zv = -1 * M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * cos(M_PI * v);
 
-		for (int i = 0; i < N; i++)
-		{
-			for (int k = N; k > 0; k--)
-			{
-				glBegin(GL_LINES);
-				glColor3ub(0, 140, 0);
-				glVertex3f(PointsEgg[i][k].x, PointsEgg[i][k].y, PointsEgg[i][k].z);
-				glVertex3f(PointsEgg[i + 1][k].x, PointsEgg[i + 1][k].y, PointsEgg[i + 1][k].z);
-				glEnd();
-			}
-		}
-	}
-	break;
-	case 3:
-	{
-		for (int i = 0; i < N; i++) {
-			for (int k = 0; k < N; k++) {
+			normal_vec[0] = (yu * zv) - (zu * yv);
+			normal_vec[1] = (zu * xv) - (xu * zv);
+			normal_vec[2] = (xu * yv) - (yu * xv);
 
-				float u = (float)i / N;
-				float v = (float)k / N;
+			length = sqrt(pow(normal_vec[0], 2) + pow(normal_vec[1], 2) + pow(normal_vec[2], 2));
+
+			if (length == 0) {
+				if (i == 0) normal_vec[1] = -1;
+				length = 1;
+			}
+
+			if (i >= (N / 2)) {
+				normal_vec[0] = -1 * normal_vec[0];
+				normal_vec[1] = -1 * normal_vec[1];
+				normal_vec[2] = -1 * normal_vec[2];
+			}
+			if (i == (N / 2)) {
+				normal_vec[1] = -1 * normal_vec[1];
+			}
+
+			normal_vec[0] = normal_vec[0] / length;
+			normal_vec[1] = normal_vec[1] / length;
+			normal_vec[2] = normal_vec[2] / length;
+
+			if ((k + 1) != N + 1) {
+				glBegin(GL_TRIANGLES);
+				glNormal3fv(normal_vec);
+				glVertex3f(PointsEgg[i][k].x, PointsEgg[i][k].y, PointsEgg[i][k].z);
+				glVertex3f(PointsEgg[i + 1 % N][k].x, PointsEgg[i + 1 % N][k].y, PointsEgg[i + 1 % N][k].z);
+				glVertex3f(PointsEgg[i][k + 1].x, PointsEgg[i][k + 1].y, PointsEgg[i][k + 1].z);
+				glEnd();
+
 				xu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * cos(M_PI * v);
 				xv = M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * sin(M_PI * v);
 				yu = 640 * pow(u, 3) - 960 * pow(u, 2) + 320 * u;
 				yv = 0;
 				zu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * sin(M_PI * v);
-				zv = -1 * M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * cos(M_PI * v);
+				zv = -M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * cos(M_PI * v);
 
 				normal_vec[0] = (yu * zv) - (zu * yv);
 				normal_vec[1] = (zu * xv) - (xu * zv);
 				normal_vec[2] = (xu * yv) - (yu * xv);
-
 				length = sqrt(pow(normal_vec[0], 2) + pow(normal_vec[1], 2) + pow(normal_vec[2], 2));
 
 				if (length == 0) {
@@ -176,100 +167,59 @@ void Egg()
 				normal_vec[1] = normal_vec[1] / length;
 				normal_vec[2] = normal_vec[2] / length;
 
-				if ((k + 1) != N + 1) {
+				glBegin(GL_TRIANGLES);
+				glNormal3fv(normal_vec);
+				glVertex3f(PointsEgg[(i + 1) % N][k].x, PointsEgg[(i + 1) % N][k].y, PointsEgg[(i + 1) % N][k].z);
+				glVertex3f(PointsEgg[(i + 1) % N][k + 1].x, PointsEgg[(i + 1) % N][k + 1].y, PointsEgg[(i + 1) % N][k + 1].z);
+				glVertex3f(PointsEgg[i][k + 1].x, PointsEgg[i][k + 1].y, PointsEgg[i][k + 1].z);
+				glEnd();
+			}
+			else {
+				if (i > 0) {
 					glBegin(GL_TRIANGLES);
-					glNormal3fv(normal_vec);
-					glVertex3f(PointsEgg[i][k].x, PointsEgg[i][k].y, PointsEgg[i][k].z);
-					glVertex3f(PointsEgg[i + 1 % N][k].x, PointsEgg[i + 1 % N][k].y, PointsEgg[i + 1 % N][k].z);
-					glVertex3f(PointsEgg[i][k + 1].x, PointsEgg[i][k + 1].y, PointsEgg[i][k + 1].z);
-					glEnd();
-
-					xu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * cos(M_PI * v);
-					xv = M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * sin(M_PI * v);
-					yu = 640 * pow(u, 3) - 960 * pow(u, 2) + 320 * u;
-					yv = 0;
-					zu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * sin(M_PI * v);
-					zv = -M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * cos(M_PI * v);
-
-					normal_vec[0] = (yu * zv) - (zu * yv);
-					normal_vec[1] = (zu * xv) - (xu * zv);
-					normal_vec[2] = (xu * yv) - (yu * xv);
-					length = sqrt(pow(normal_vec[0], 2) + pow(normal_vec[1], 2) + pow(normal_vec[2], 2));
-
-					if (length == 0) {
-						if (i == 0) normal_vec[1] = -1;
-						length = 1;
-					}
-
-					if (i >= (N / 2)) {
-						normal_vec[0] = -1 * normal_vec[0];
-						normal_vec[1] = -1 * normal_vec[1];
-						normal_vec[2] = -1 * normal_vec[2];
-					}
-					if (i == (N / 2)) {
-						normal_vec[1] = -1 * normal_vec[1];
-					}
-
-					normal_vec[0] = normal_vec[0] / length;
-					normal_vec[1] = normal_vec[1] / length;
-					normal_vec[2] = normal_vec[2] / length;
-
-					glBegin(GL_TRIANGLES);
-					glNormal3fv(normal_vec);
 					glVertex3f(PointsEgg[(i + 1) % N][k].x, PointsEgg[(i + 1) % N][k].y, PointsEgg[(i + 1) % N][k].z);
 					glVertex3f(PointsEgg[(i + 1) % N][k + 1].x, PointsEgg[(i + 1) % N][k + 1].y, PointsEgg[(i + 1) % N][k + 1].z);
 					glVertex3f(PointsEgg[i][k + 1].x, PointsEgg[i][k + 1].y, PointsEgg[i][k + 1].z);
 					glEnd();
 				}
-				else {
-					if (i > 0) {
-						glBegin(GL_TRIANGLES);
-						glVertex3f(PointsEgg[(i + 1) % N][k].x, PointsEgg[(i + 1) % N][k].y, PointsEgg[(i + 1) % N][k].z);
-						glVertex3f(PointsEgg[(i + 1) % N][k + 1].x, PointsEgg[(i + 1) % N][k + 1].y, PointsEgg[(i + 1) % N][k + 1].z);
-						glVertex3f(PointsEgg[i][k + 1].x, PointsEgg[i][k + 1].y, PointsEgg[i][k + 1].z);
-						glEnd();
-					}
 
-					xu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * cos(M_PI * v);
-					xv = M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * sin(M_PI * v);
-					yu = 640 * pow(u, 3) - 960 * pow(u, 2) + 320 * u;
-					yv = 0;
-					zu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * sin(M_PI * v);
-					zv = -M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * cos(M_PI * v);
+				xu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * cos(M_PI * v);
+				xv = M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * sin(M_PI * v);
+				yu = 640 * pow(u, 3) - 960 * pow(u, 2) + 320 * u;
+				yv = 0;
+				zu = (-450 * pow(u, 4) + 900 * pow(u, 3) - 810 * pow(u, 2) + 360 * u - 45) * sin(M_PI * v);
+				zv = -M_PI * (90 * pow(u, 5) - 225 * pow(u, 4) + 270 * pow(u, 3) - 180 * pow(u, 2) + 45 * u) * cos(M_PI * v);
 
-					normal_vec[0] = (yu * zv) - (zu * yv);
-					normal_vec[1] = (zu * xv) - (xu * zv);
-					normal_vec[2] = (xu * yv) - (yu * xv);
-					length = sqrt(pow(normal_vec[0], 2) + pow(normal_vec[1], 2) + pow(normal_vec[2], 2));
+				normal_vec[0] = (yu * zv) - (zu * yv);
+				normal_vec[1] = (zu * xv) - (xu * zv);
+				normal_vec[2] = (xu * yv) - (yu * xv);
+				length = sqrt(pow(normal_vec[0], 2) + pow(normal_vec[1], 2) + pow(normal_vec[2], 2));
 
-					if (length == 0) {
-						if (i == 0) normal_vec[1] = -1;
-						length = 1;
-					}
-
-
-					if (i >= (N / 2)) {
-						normal_vec[0] = -1 * normal_vec[0];
-						normal_vec[1] = -1 * normal_vec[1];
-						normal_vec[2] = -1 * normal_vec[2];
-					}
-
-					normal_vec[0] = normal_vec[0] / length;
-					normal_vec[1] = normal_vec[1] / length;
-					normal_vec[2] = normal_vec[2] / length;
-
-					glBegin(GL_TRIANGLES);
-					glNormal3fv(normal_vec);
-					glVertex3f(PointsEgg[(i + 1) % N][k].x, PointsEgg[(i + 1) % N][k].y, PointsEgg[(i + 1) % N][k].z);
-					glVertex3f(PointsEgg[(N - i) % N][0].x, PointsEgg[(N - i) % N][0].y, PointsEgg[(N - i) % N][0].z);
-					glVertex3f(PointsEgg[N - i - 1][0].x, PointsEgg[N - i - 1][0].y, PointsEgg[N - i - 1][0].z);
-					glEnd();
-
+				if (length == 0) {
+					if (i == 0) normal_vec[1] = -1;
+					length = 1;
 				}
+
+
+				if (i >= (N / 2)) {
+					normal_vec[0] = -1 * normal_vec[0];
+					normal_vec[1] = -1 * normal_vec[1];
+					normal_vec[2] = -1 * normal_vec[2];
+				}
+
+				normal_vec[0] = normal_vec[0] / length;
+				normal_vec[1] = normal_vec[1] / length;
+				normal_vec[2] = normal_vec[2] / length;
+
+				glBegin(GL_TRIANGLES);
+				glNormal3fv(normal_vec);
+				glVertex3f(PointsEgg[(i + 1) % N][k].x, PointsEgg[(i + 1) % N][k].y, PointsEgg[(i + 1) % N][k].z);
+				glVertex3f(PointsEgg[(N - i) % N][0].x, PointsEgg[(N - i) % N][0].y, PointsEgg[(N - i) % N][0].z);
+				glVertex3f(PointsEgg[N - i - 1][0].x, PointsEgg[N - i - 1][0].y, PointsEgg[N - i - 1][0].z);
+				glEnd();
+
 			}
 		}
-	}
-	break;
 	}
 }
 
@@ -340,14 +290,6 @@ void MyInit(void)
 
 }
 
-void keys(unsigned char key, int x, int y)
-{
-	if (key == 'p') model = 1;
-	if (key == 'w') model = 2;
-	if (key == 's') model = 3;
-	RenderScene();
-}
-
 void spinEgg()
 {
 
@@ -392,9 +334,8 @@ void main(void)
 
 	glutInitWindowSize(300, 300);
 
-	glutCreateWindow("Oswietlanie - jedno zrodlo swiatla");
+	glutCreateWindow("Oswietlanie - jedno zrodlo swiatla");
 	glutDisplayFunc(RenderScene);
-	glutKeyboardFunc(keys);
 	glutReshapeFunc(ChangeSize);
 	glutIdleFunc(spinEgg);
 	MyInit();
