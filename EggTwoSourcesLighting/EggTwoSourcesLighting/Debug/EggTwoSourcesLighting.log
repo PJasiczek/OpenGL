@@ -1,0 +1,3 @@
+﻿  EggTwoSourcesLighting.cpp
+c:\users\piotr jasiczek\source\repos\eggtwosourceslighting\eggtwosourceslighting\eggtwosourceslighting.cpp(397): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
+  EggTwoSourcesLighting.vcxproj -> C:\Users\Piotr Jasiczek\source\repos\EggTwoSourcesLighting\Debug\EggTwoSourcesLighting.exe
