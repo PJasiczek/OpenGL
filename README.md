@@ -73,6 +73,7 @@ Program create spinning shape of the egg with three different models.
 * Key _P_ switch to egg model built from _N_ points
 * Key _W_ switch to egg model in the form of a grid formed from a combination of _N_ points
 * Key _W_ switch to egg model built from randomly filled triangles
+
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_3_dz/).
 
 ## Screenshots
@@ -87,6 +88,7 @@ Program create a shape of the egg with mouse listener function to rotate an obje
 * With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
 * With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
 * When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_4_dz/).
 
 ## Screenshots
@@ -111,6 +113,7 @@ Program create a textured shape of the egg with mouse listener function to rotat
 * With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
 * With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
 * When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_6_dz/).
 
 ## Screenshots
@@ -125,6 +128,7 @@ Program create a shape of the egg illuminated with two different lighths sources
 * With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
 * With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
 * When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
 
 ## Screenshots
@@ -139,6 +143,7 @@ Program create a textured pyramid with mouse listener function to rotate an obje
 * With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
 * With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
 * When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+
 Each wall was assigned a key with the help of which we turn off and turn on surface texturing.
 * Key _P_ enable/disable texturing of one of the walls of the pyramid
 * Key _O_ enable/disable texturing of one of the walls of the pyramid
@@ -171,6 +176,7 @@ Program create a wire teapot with mouse listener function to rotate an object.
 * With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
 * With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
 * When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_4_dz/).
 
 ## Screenshots
@@ -185,6 +191,7 @@ Program create a solid teapot illuminated with white light. The same as in previ
 * With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
 * With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
 * When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+
 Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
 
 ## Screenshots
