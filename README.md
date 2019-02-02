@@ -4,11 +4,11 @@
 ## Table of contents
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Bezier curve](#Bezier curve)
+* Bezier curve
     * [General info](#general-info)
     * [Screenshots](#screenshots)
     * [Status](#status)
-* [Egg shape](#Egg shape)
+* Egg shape
     * [General info](#general-info-1)
     * [Screenshots](#screenshots-1)
     * [Status](#status-1)
