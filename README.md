@@ -24,22 +24,26 @@
     * [General info](#general-info-4)
     * [Screenshots](#screenshots-4)
     * [Status](#status-4)
-* Pyramid texturing    
+* Egg two sources lighting
     * [General info](#general-info-5)
     * [Screenshots](#screenshots-5)
     * [Status](#status-5)
-* Sierpinski carpet    
+* Pyramid texturing    
     * [General info](#general-info-6)
     * [Screenshots](#screenshots-6)
     * [Status](#status-6)
-* Teapot casting    
+* Sierpinski carpet    
     * [General info](#general-info-7)
     * [Screenshots](#screenshots-7)
     * [Status](#status-7)
-* Teapot lighting
+* Teapot casting    
     * [General info](#general-info-8)
     * [Screenshots](#screenshots-8)
     * [Status](#status-8)
+* Teapot lighting
+    * [General info](#general-info-9)
+    * [Screenshots](#screenshots-9)
+    * [Status](#status-9)
 * [Contact](#contact)
 
 ## Technologies
@@ -99,6 +103,16 @@ Project is: _finished_.
 
 ## Screenshots
 ![Example screenshot](./img/screenshot5.png)
+
+## Status
+Project is: _finished_.
+
+# Egg two sources lighting
+## General info
+
+
+## Screenshots
+![Example screenshot](./img/screenshot10.png)
 
 ## Status
 Project is: _finished_.
