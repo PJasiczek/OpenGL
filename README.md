@@ -47,7 +47,7 @@
 
 ## Setup
 Programs placed in the repository will require the GLUT (OpenGL Utility Toolkit) library. However, if you do not have one in your development environment, install the library as follows:
-* Download and unpack library files <b>![glut-3.7](./library/glut_3_7.zip)</b>
+* Download and unpack library files ![glut-3.7](./library/glut_3_7.zip)
 * Locate the folder in which the gl.h file is located and place the glut.h file there
 * Locate the folder in which the opengl32.lib file is located and place the glut32.lib file there
 * Locate the folder in which the opengl32.dll file is located and place the glut32.dll file there
