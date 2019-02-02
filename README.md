@@ -58,18 +58,22 @@ Programs placed in the repository will require the GLUT (OpenGL Utility Toolkit)
 
 # Bezier Curve
 ## General info
-
+The program draws a set grid of control points in the form of small balls connected with thin lines. After pressing the key _W_, an approximation of the Bezier surface appears in the drawing. Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/repository/dydaktyka/gk/zadania_domowe/zadania_3.pdf).
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
 ![Example screenshot](./img/screenshot1.png)
+![Example screenshot](./img/screenshot.png)
 
 ## Status
 Project is: _finished_.
 
 # Egg shape
 ## General info
-
+Program create spinning shape of the egg with three different models.
+* key _P_ switch to egg model built from _N_ points
+* key _W_ switch to egg model in the form of a grid formed from a combination of _N_ points
+* key _W_ switch to egg model built from randomly filled triangles
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_3_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot2.png)
@@ -79,7 +83,11 @@ Project is: _finished_.
 
 # Egg casting
 ## General info
-
+Program create a shape of the egg with mouse listener function to rotate an object.
+* With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
+* With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
+* When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_4_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot3.png)
@@ -89,7 +97,7 @@ Project is: _finished_.
 
 # Egg lighting
 ## General info
-
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot4.png)
@@ -99,7 +107,7 @@ Project is: _finished_.
 
 # Egg texturing
 ## General info
-
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_6_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot5.png)
@@ -109,7 +117,7 @@ Project is: _finished_.
 
 # Egg two sources lighting
 ## General info
-
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot10.png)
@@ -119,7 +127,7 @@ Project is: _finished_.
 
 # Pyramid texturing
 ## General info
-
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_6_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot6.png)
@@ -129,7 +137,7 @@ Project is: _finished_.
 
 # Sierpinski carpet
 ## General info
-
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_2_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot7.png)
@@ -139,7 +147,11 @@ Project is: _finished_.
 
 # Teapot casting  
 ## General info
-
+Program create a wire teapot with mouse listener function to rotate an object.
+* With the left mouse button pressed, moving the mouse cursor in the horizontal direction causes the object to rotate around the y axis
+* With the left mouse button pressed, moving the mouse cursor in the vertical direction causes the object to rotate around the x axis
+* When the right mouse button is pressed, the mouse cursor moves in the vertical direction and the observer moves closer to the object
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_4_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot8.png)
@@ -149,7 +161,7 @@ Project is: _finished_.
 
 # Teapot lighting 
 ## General info
-
+Program was created for the needs of the laboratory in the subject called Computer Graphics. The content of the task has been placed [here](http://www.zsk.ict.pwr.wroc.pl/zsk/dyd/intinz/gk/lab/cw_5_dz/).
 
 ## Screenshots
 ![Example screenshot](./img/screenshot9.png)
