@@ -1,3 +1,0 @@
-﻿  PyramidTexturing.cpp
-c:\users\piotr jasiczek\source\repos\pyramidtexturing\pyramidtexturing\pyramidtexturing.cpp(491): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
-  PyramidTexturing.vcxproj -> C:\Users\Piotr Jasiczek\source\repos\PyramidTexturing\Debug\PyramidTexturing.exe

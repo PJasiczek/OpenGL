@@ -1,3 +1,0 @@
-﻿  EggCasting.cpp
-c:\users\piotr jasiczek\source\repos\eggcasting\eggcasting\eggcasting.cpp(324): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
-  EggCasting.vcxproj -> C:\Users\Piotr Jasiczek\source\repos\EggCasting\Debug\EggCasting.exe

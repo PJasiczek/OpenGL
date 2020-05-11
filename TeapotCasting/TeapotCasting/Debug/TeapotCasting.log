@@ -1,3 +1,0 @@
-﻿  TeapotCasting.cpp
-c:\users\piotr jasiczek\source\repos\teapotcasting\teapotcasting\teapotcasting.cpp(156): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
-  TeapotCasting.vcxproj -> C:\Users\Piotr Jasiczek\source\repos\TeapotCasting\Debug\TeapotCasting.exe

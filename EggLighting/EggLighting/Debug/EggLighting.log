@@ -1,3 +1,0 @@
-﻿  EggLighting.cpp
-c:\users\piotr jasiczek\documents\github\opengl\egglighting\egglighting\egglighting.cpp(331): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
-  EggLighting.vcxproj -> C:\Users\Piotr Jasiczek\Documents\GitHub\OpenGL\EggLighting\Debug\EggLighting.exe

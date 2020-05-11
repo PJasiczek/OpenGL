@@ -1,3 +1,0 @@
-﻿  EggTexturing.cpp
-c:\users\piotr jasiczek\source\repos\eggtexturing\eggtexturing\eggtexturing.cpp(508): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
-  EggTexturing.vcxproj -> C:\Users\Piotr Jasiczek\source\repos\EggTexturing\Debug\EggTexturing.exe
